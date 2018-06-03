@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styleSheet.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">  
+</head>
+<body>
+        <div class="container">
+                <div class="row" id="logo">
+                   <img src="media\logo.jpeg" alt="Logo">
+                </div>
+                <div class="row" id="menuBar">
+                    <div class="col-sm-2">
+                        <a href="index.html" class="button">Home</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="about.html" class="button">About</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="classes.html" class="button">Classes</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#" class="button">Recipes</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="gallery.html" class="button">Gallery</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="contact.html" class="button">Contact</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="row" id="title">
+                        <h1>Gallery</h1>
+                    </div>
+                    <div class="row">
+                        <div class="slideshow-container">
+
+                             <div class="mySlides">
+                                <div class="numbertext">1 / 3</div>
+                                 <img src="media\brownie.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="media\relaxYoga.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="media\aerobics2.jpg" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="mx-auto">
+                            <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                            </div>
+                        </div>      
+                    </div>
+        
+            
+        </div>
+       
+</body>
+<script src="scriptSheet.js"></script>
+</html>

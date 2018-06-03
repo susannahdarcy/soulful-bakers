@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classes</title>
+    <link rel="stylesheet" type="text/css" href="styleSheet.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display" rel="stylesheet">
+</head>
+<body>
+     <div class="container">
+        <div class="row" id="logo">
+           <img src="media\logo.jpeg" alt="Logo">
+        </div>
+        <div class="row" id="menuBar">
+            <div class="col-sm-2">
+                <a href="index.html" class="button">Home</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="about.html" class="button">About</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="classes.html" class="button">Classes</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="#" class="button">Recipes</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="gallery.html" class="button">Gallery</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="contact.html" class="button">Contact</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row" id="title">
+                <h1>Classes</h1>
+            </div>
+            <div class="row" id="table">
+                <div class="mx-auto table-reponsive">
+                    <table>
+                        <tr>
+                            <th>Time</th>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thrusday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                        <tr>
+                            <td>10:00am - 12:00pm</td>
+                            <td>Meal Prep</td>
+                            <td>Monday Blues Bites</td>
+                            <td>Yoga with Yogurt</td>
+                            <td>Mid-Week Motivation</td>
+                            <td>Shuffle and Truffle</td>
+                            <td>Party Meals</td>
+                            <td>Recipe Book Club</td>
+                        </tr>
+                        <tr>
+                            <td>5:00pm - 7:00pm</td>
+                            <td>Pepare Yoga</td>
+                            <td>Muffin Tops</td>
+                            <td>Veggie Cooking</td>
+                            <td>Heathly Baking</td>
+                            <td>Relaxtion Baking</td>
+                            <td>Jucies and Drinks</td>
+                            <td>Baking Show Binge</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class= "mx-auto">
+                    <form action="classSignUp.html" method "post">
+                            Name: <br>
+                            <!CheckName? from previous submits!>
+                            <input type="text" name= "name"> <br/>
+                            Email: <br/>
+                            <input type="text" name= "email"><br/>
+                            Which class/classes? <br>
+                            <input type="checkbox" name="check_list[]", value="Meal_Prep"><label>Meal Prep</label>  
+                            <input type="checkbox" name="check_list[]", value="Pepare Yoga"><label>Pepare Yoga</label><br/>
+                            <input type="checkbox" name="check_list[]", value="Monday Blues Bite"><label>Monday Blues Bitep</label>
+                            <input type="checkbox" name="check_list[]", value="Muffin Top"><label>Muffin Tops</label><br/>
+                            <input type="checkbox" name="check_list[]", value="Yoga_Yogurt"><label>Yoga with Yogurt</label>
+                            <input type="checkbox" name="check_list[]", value="Veggie Cooking"><label>Veggie Cooking</label><br/>
+                            <input type="checkbox" name="check_list[]", value="Mid-Week_Motivation"><label>Mid-Week Motivation</label> 
+                            <input type="checkbox" name="check_list[]", value="Heathly Baking"><label>Heathly Baking</label><br/>
+                            <input type="checkbox" name="check_list[]", value="Shuffle and Truffle"><label>Shuffle and Truffle</label> 
+                            <input type="checkbox" name="check_list[]", value="Relaxtion Baking"><label>Relaxtion Baking</label><br/>
+                            <input type="checkbox" name="check_list[]", value="Party Meals"><label>Party Meals</label> 
+                            <input type="checkbox" name="check_list[]", value="Jucies and Drink"><label>Jucies and Drink</label><br/>
+                            <input type="checkbox" name="check_list[]", value="Recipe Book Club"><label>Recipe Book Club</label> 
+                            <input type="checkbox" name="check_list[]", value="Baking Show Binge"><label>Baking Show Binge</label><br/>
+                            Number of people: <br/>
+                            <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

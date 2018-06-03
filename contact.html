@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="styleSheet.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<script src="scriptSheet.js"></script>
+<body>
+     <div class="container">
+        <div class="row" id="logo">
+           <img src="media\logo.jpeg" alt="Logo">
+        </div>
+        <div class="row" id="menuBar">
+            <div class="col-sm-2">
+                <a href="index.html" class="button">Home</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="about.html" class="button">About</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="classes.html" class="button">Classes</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="#" class="button">Recipes</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="gallery.html" class="button">Gallery</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="contact.html" class="button">Contact</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row" id="title">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="row">
+                <p>
+                    We are happy to answer any questons or enquiries about our group. So please feel free to contact us using the form below and someone will contact you ASAP.
+                </p>
+            </div>
+            <div class="row">
+                <div class="my-form mx-auto">
+                    <form name= "contactForm" method = "POST" action="contactSubmit.php" onsubmit= "return validateForm()">
+                        Name: <br>
+                        <input type="text" name= "name">
+                        <br>
+                        Email: <br>
+                        <input type="text" name= "email">
+                        <br>
+                        Nature of Enquiry: <br>
+                        <select name="question" id="dropDown">
+                            <option value="join">Joining</option>
+                            <option value="classes">Classes</option>
+                            <option value="recipes">Recipes</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <br>
+                        Message: <br>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <br>
+                        <input type="submit" value="Submit">
+                </form>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
